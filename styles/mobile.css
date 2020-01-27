@@ -1,0 +1,117 @@
+/* use font sizes (ems) to change sizes of text */
+@import "desktop.css";
+@import "tablet.css";
+
+.secondNav {
+  margin-top: 40px;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.secondNav li {
+  display: block;
+  margin-top: 5px;
+}
+
+.homepage_initials h1 {
+  left:70%;
+}
+
+/* reconfigure homepage sections */
+
+.homepage h1 div {
+  font-size: 35pt;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.aboutText {
+  width: 100%;
+}
+
+.aboutImage img {
+  width: 250px;
+}
+
+.projects_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_nav img {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.project_captions {
+  display: flex;
+  flex-direction: column;
+}
+
+.project_captions p {
+  height: 100px;
+  margin-bottom: 50px;
+}
+
+.projects_mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume h2 {
+  float: left;
+  margin-left: 10px;
+}
+
+.resume h3 {
+  float: right;
+  margin-right: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info {
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 80%;
+}
+
+.sketchbookGallery {
+  margin-top: 240px;
+}
+
+/* reconfigure writing page */
+
+.writingGallery h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.writingGallery a {
+  width: 20%;
+  margin-right: 40%;
+  margin-left: 40%;
+  float: none;
+}

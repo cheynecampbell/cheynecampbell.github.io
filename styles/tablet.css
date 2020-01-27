@@ -1,0 +1,122 @@
+@import "desktop.css";
+
+/* anything that is designed again will swap out */
+
+/* add hamburger menu */
+
+.homepage_initials h1 {
+  position: fixed;
+  left:80%;
+}
+
+.initials h1 {
+  float: right;
+  position: relative;
+  margin-right: 10px;
+}
+
+
+.dropdown {
+  display: none;
+}
+
+/* Dropdown Button */
+.hamBtn {
+    background-color: transparent;
+    background-image: url("../images/hand_logo.png");
+    background-size: cover;
+    background-position: center;
+    color: tomato;
+    padding: 16px;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+    height: 85px;
+    width: 80px;
+}
+
+/* Dropdown button on hover & focus */
+.hamBtn:hover, .hamBtn:focus {
+    color: powderblue;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.hamburger {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    margin-top: 30px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.hamContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.hamContent a {
+    color: powderblue;
+    background-color: tomato;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.hamContent a:hover {background-color: orange}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+
+
+
+/* the idea is to change all the hover states to active states because you wont necessarilly see the hover states on a tablet */
+/* but i dont have a tablet to test this theory on :) */
+
+/* everything else looks the same as on normal desktop width - most changes are in mobile */
+
+.projects p:active {
+  border-radius: 25px;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  color: yellow;
+}
+
+.resume .resumelink:active {
+  background-color: #f4cdbd;
+  border: #3399ff 2px solid;
+  color: #3399ff;
+}
+
+input[type=submit]:active {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  .secondNav li:active {
+    background: yellow;
+  }
+
+  .secondNav li:active a {
+    color: #3399ff;
+  }
+
+  .writingGallery a:active {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+  .secondNav {
+    margin-top: 80px;
+  }

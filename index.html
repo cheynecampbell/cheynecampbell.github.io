@@ -1,0 +1,117 @@
+<!Doctype>
+
+<html>
+
+  <head>
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> <!-- links to the google font -->
+
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="index.html">
+        <div class="homepage_initials"><h1>C J C</h1></div>
+      </a>
+
+      <nav> <!-- navgiation with high five feature - will be styled out later -->
+        <div class="dropdown">
+          <div class="dropbutton"> <!-- contains plain hand and high five hand logos -->
+            <img class="hand_logo" src="images/hand_logo.png">
+            <img class="high_five" src="images/high_five.png">
+          </div>
+          <div class="dropdown_content"> <!-- contains page jumps to different parts within the homepage -->
+            <a href="about.html">about</a>
+            <!--<!a href="http://i6.cims.nyu.edu/~cc4869/assignment6/#projects">projects</a>-->
+            <a href="resume.html">resume</a>
+            <a href="contact.html">contact</a>
+          </div>
+          <div class="high_five_text"><p>high five!</p></div> <!-- text underneath the logo -->
+        </div>
+      </nav>
+
+      <!-- this is the HAMBURGER NAVIGATION for tablet and mobile modes -->
+      <!-- source for hamburger nav - https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+
+      <div class="hamburger" style="position:fixed;">
+        <button onclick="myFunction()" class="hamBtn"></button>
+          <div id="myDropdown" class="hamContent">
+            <a href="about.html">about</a>
+            <!--<a href="#projects">projects</a>-->
+            <a href="resume.html">resume</a>
+            <a href="contact.html">contact</a>
+          </div>
+      </div>
+
+      <!-- this is the JAVASCRIPT FOR THE HAMBURGER NAV -->
+      <script>
+      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      /* Close the dropdown menu if the user clicks outside of it */
+      window.onclick = function(event) {
+        if (!event.target.matches('.hamBtn')) {
+
+          var dropdowns = document.getElementsByClassName("hamContent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+    </header>
+
+    <a name="homepage">
+    <div class="homepage"> <!-- homepage container / parent -->
+      <div class="homepage_text"> <!-- homepage child elements -->
+        <h3>hello my name is</h3>
+        <h1> <!-- divide up name letters into individual divs to allow for hover effect -->
+          <div class="firstname">
+            <div class="letter">c</div>
+            <div class="letter">h</div>
+            <div class="letter">e</div>
+            <div class="letter">y</div>
+            <div class="letter">n</div>
+            <div class="letter">e</div>
+          </div>
+          <div class="lastname">
+            <div class="letter"> </div>
+            <div class="letter">c</div>
+            <div class="letter">a</div>
+            <div class="letter">m</div>
+            <div class="letter">p</div>
+            <div class="letter">b</div>
+            <div class="letter">e</div>
+            <div class="letter">l</div>
+            <div class="letter">l</div>
+          </div>
+        </h1>
+      </div>
+    </div>
+    </a>
+
+  </body>
+
+</html>

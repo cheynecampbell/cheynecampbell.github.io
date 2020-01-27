@@ -1,0 +1,109 @@
+<!Doctype>
+
+<html>
+
+  <head>
+
+    <!-- Media query for narrow browser width -->
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="styles/mobile.css">
+
+    <!-- Media query for medium browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="styles/tablet.css">
+
+    <!-- Media query for full browser width -->
+    <link rel="stylesheet" media="only screen and (min-width: 961px)" href="styles/desktop.css">
+
+    <!-- Prevent smartphones from scaling pages down -->
+    <meta name="viewport" content="initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> <!-- links to the google font -->
+
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <a href="index.html">
+        <div class="homepage_initials"><h1>C J C</h1></div>
+      </a>
+
+      <nav> <!-- navgiation with high five feature - will be styled out later -->
+        <div class="dropdown">
+          <div class="dropbutton"> <!-- contains plain hand and high five hand logos -->
+            <img class="hand_logo" src="images/hand_logo.png">
+            <img class="high_five" src="images/high_five.png">
+          </div>
+          <div class="dropdown_content"> <!-- contains page jumps to different parts within the homepage -->
+            <a href="about.html">about</a>
+            <!--<!a href="http://i6.cims.nyu.edu/~cc4869/assignment6/#projects">projects</a>-->
+            <a href="resume.html">resume</a>
+            <a href="contact.html">contact</a>
+          </div>
+          <div class="high_five_text"><p>high five!</p></div> <!-- text underneath the logo -->
+        </div>
+      </nav>
+
+      <!-- this is the HAMBURGER NAVIGATION for tablet and mobile modes -->
+      <!-- source for hamburger nav - https://www.w3schools.com/howto/howto_js_dropdown.asp -->
+
+      <div class="hamburger" style="position:fixed;">
+        <button onclick="myFunction()" class="hamBtn"></button>
+          <div id="myDropdown" class="hamContent">
+            <a href="about.html">about</a>
+            <!--<a href="#projects">projects</a>-->
+            <a href="resume.html">resume</a>
+            <a href="contact.html">contact</a>
+          </div>
+      </div>
+
+      <!-- this is the JAVASCRIPT FOR THE HAMBURGER NAV -->
+      <script>
+      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      /* Close the dropdown menu if the user clicks outside of it */
+      window.onclick = function(event) {
+        if (!event.target.matches('.hamBtn')) {
+
+          var dropdowns = document.getElementsByClassName("hamContent");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+
+    </header>
+
+    <a name="contact">
+    <div class="contact"> <!-- contact page parent element -->
+      <div class="contact_info"> <!-- contact page children elements-->
+        <h2>contact me!</h2>
+        <p>+1 704 928 6483</p>
+        <p>cheyne.campbell@gmail.com</p>
+      </div>
+      <div class="container"> <!-- this will be an email contact form - source - https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+        <form action="action_page.php">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name...">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email...">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something..." style="height:140px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    </a>
+
+  </body>
+
+</html>
