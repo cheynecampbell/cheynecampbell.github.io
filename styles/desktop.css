@@ -334,6 +334,7 @@ header a {
 
 .contact media_links {
   justify-content: center;
+  width: 100%;
 }
 
 .contact img {
