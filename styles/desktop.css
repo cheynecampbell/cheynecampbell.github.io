@@ -309,14 +309,14 @@ header a {
   color: tomato;
 }
 
-
+/*-------------------------------------------------------------------------------------------------------------*/
 /* CONTACT PAGE FORMATTING */
+/*-------------------------------------------------------------------------------------------------------------*/
 
 .contact {
   background-color: blanchedalmond;
   height: 100vh;
   display: flex;
-  /*flex-direction: row;*/
   flex-direction: column;
   justify-content: center;
 }
@@ -326,16 +326,18 @@ header a {
   text-align: center;
   margin-top: 0;
 }
+
 .contact p {
   color: tomato;
   text-align: center;
   font-size: 16pt;
 }
 
-.contact media_links {
+.contact .media_links {
   display: flex;
   flext-direction: row;
   justify-content: center;
+  border: 1px;
   width: 100%;
 }
 
@@ -346,44 +348,11 @@ header a {
   margin-right: 10px;
 }
 
-.contact media_links img:hover {
+.contact .media_links img:hover {
   opacity: 0.5;
 }
 
-
-/*
-.contact_info {
-  width: 40%;
-}
-*/
-
-/* Style inputs with type="text", select elements and textareas */
-input[type= "text", "email"], select {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid powderblue; /* Border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: tomato;
-    color: blanchedalmond;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 12px 20px;
-    border: tomato 2px solid;
-    border-radius: 4px;
-  }
-
-/* When moving the mouse over the submit button, add a swing effect */
-
-
+/* swing effect */
 /* https://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
 
     @-webkit-keyframes swing
@@ -406,207 +375,3 @@ input[type=submit] {
     }
 
 
-
-/* Add a background color and some padding around the form */
-
-.container {
-    border-radius: 5px;
-    background-color: powderblue;
-    padding: 20px;
-    width: 40%;
-    height: 55%;
-  }
-
-.fieldset {
-  border: 0;
-}
-
-label {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  color: tomato;
-}
-textarea, input {
-  font-family: 'Helvetica';
-  font-weight: lighter;
-  font-size: 14pt;
-  color: tomato;
-  background: blanchedalmond;
-}
-
-
-/* remove the highlighting in the form fields */
-*:focus {
-    outline: none;
-}
-
-
-/* STYLES FOR SKETCHBOOK PAGE */
-
-.secondNav {
-  position: absolute;
-  text-align: center;
-  list-style-type: none;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-top: 140px;
-}
-
-.secondNav li {
-  display: inline-block;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 18pt;
-  text-decoration: none;
-  text-align: center;
-  padding: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 0px;
-  border: tomato 2px solid;
-  background: #3399ff;
-  border-radius: 4px;
-}
-
-.secondNav li a {
-  text-decoration: none;
-  color: yellow;
-}
-
-.secondNav li:hover {
-  background: yellow;
-}
-
-.secondNav li:hover a {
-  color: #3399ff;
-}
-
-.sketchbookBackground {
-  position: relative;
-}
-
-
-/* STYLES FOR IMAGE GALLERIES */
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.sketchbookGallery {
-  position: absolute;
-  margin-top: 220px;
-}
-
-.spacer {
-  height: 80px;
-}
-
-.spacer h1 {
-  text-align: center;
-  margin: 0;
-  color: yellow;
-}
-
-.writingGallery {
-  position: absolute;
-  margin-top: 220px;
-}
-
-.writingGallery h2 {
-  width: 60%;
-  font-size: 20pt;
-  margin-left: 10%;
-  display: inline-block;
-  color: #EDAC92;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 2;
-}
-
-.writingGallery a {
-  display: inline-block;
-  width: 10%;
-  float: right;
-  margin-right: 15%;
-
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 2
-
-  font-family: 'Helvetica';
-  font-size: 16pt;
-
-  border: 2px solid yellow;
-  border-radius: 4px;
-  padding: 5px;
-
-  text-decoration: none;
-}
-
-.writingGallery a:link {
-  color: yellow;
-  font-family: 'Helvetica';
-  font-size: 16pt;
-}
-
-.writingGallery a:visited {
-  color: yellow;
-}
-
-.writingGallery a:hover {
-  -webkit-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
