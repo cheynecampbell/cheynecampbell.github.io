@@ -161,6 +161,7 @@ header a {
   color: orange;
 }
 
+
 /* ABOUT PAGE FORMATTING */
 
 .about {
@@ -203,8 +204,10 @@ header a {
   animation-iteration-count: 1;
 }
 
+
 /* PROJECTS PAGE FORMATTING */
 
+/*
 .projects {
   background-color: blanchedalmond;
   height: 100vh;
@@ -262,6 +265,8 @@ header a {
   transform: rotateY(180deg);
   color: yellow;
 }
+*/
+
 
 /* RESUME PAGE FORMATTING */
 
@@ -304,6 +309,7 @@ header a {
   color: tomato;
 }
 
+
 /* CONTACT PAGE FORMATTING */
 
 .contact {
@@ -313,16 +319,7 @@ header a {
   /*flex-direction: row;*/
   flex-direction: column;
   justify-content: center;
-
 }
-
-/*
-.contact img {
-  height: 150px;
-  display: block;
-  margin: auto;
-}
-*/
 
 .contact h2 {
   color: tomato;
@@ -335,9 +332,16 @@ header a {
   font-size: 16pt;
 }
 
+.contact img {
+  height: 100px;
+  width: 100px;
+}
+
+/*
 .contact_info {
   width: 40%;
 }
+*/
 
 /* Style inputs with type="text", select elements and textareas */
 input[type= "text", "email"], select {
