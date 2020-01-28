@@ -306,9 +306,6 @@ header a {
 
 /* CONTACT PAGE FORMATTING */
 
-
-/*
-
 .contact {
   background-color: blanchedalmond;
   height: 100vh;
@@ -318,11 +315,13 @@ header a {
   align-items: center;
 }
 
+/*
 .contact img {
   height: 150px;
   display: block;
   margin: auto;
 }
+*/
 
 .contact h2 {
   color: tomato;
@@ -339,12 +338,8 @@ header a {
   width: 40%;
 }
 
-*/
-
-/* https://www.w3schools.com/howto/howto_css_contact_form.asp */
-
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type= text, email], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid powderblue; /* Border */
