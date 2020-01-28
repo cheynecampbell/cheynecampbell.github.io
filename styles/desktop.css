@@ -412,7 +412,10 @@ textarea, input {
 }
 */
 
-
+/* remove the highlighting in the form fields */
+*:focus {
+    outline: none;
+}
 
 
 /* STYLES FOR SKETCHBOOK PAGE */
