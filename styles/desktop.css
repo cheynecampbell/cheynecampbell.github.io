@@ -339,7 +339,7 @@ header a {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type= text, email], select, textarea {
+input[type= "text", "email"], select {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid powderblue; /* Border */
