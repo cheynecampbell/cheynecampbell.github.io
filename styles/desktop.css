@@ -332,9 +332,13 @@ header a {
   font-size: 16pt;
 }
 
+.contact media_links {
+  justify-content: center;
+}
+
 .contact img {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
 }
 
 /*
