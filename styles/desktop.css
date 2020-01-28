@@ -334,6 +334,7 @@ header a {
 
 .contact media_links {
   display: flex;
+  flext-direction: row;
   justify-content: center;
   width: 100%;
 }
@@ -344,6 +345,11 @@ header a {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.contact img:hover {
+  opacity: 0.5;
+}
+
 
 /*
 .contact_info {
